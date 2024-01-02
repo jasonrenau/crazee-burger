@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { LuUserCircle2 } from "react-icons/lu";
 import { IoIosArrowForward } from "react-icons/io";
+import PrimaryButton from "../../ui/primaryButton";
 
 export default function LoginForm() {
   //state
@@ -49,10 +50,11 @@ export default function LoginForm() {
           />
         </label>
       </div>
-      <button className="flex w-full items-center justify-center gap-2 rounded-md bg-orange-500 px-4 py-2 text-white">
-        Accéder à mon espace
-        <IoIosArrowForward />
-      </button>
+
+      <PrimaryButton
+        label={"Accéder à mon espace"}
+        icon={<IoIosArrowForward />}
+      />
     </form>
   );
 }
