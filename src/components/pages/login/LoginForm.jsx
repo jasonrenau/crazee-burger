@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { LuUserCircle2 } from "react-icons/lu";
 import { IoIosArrowForward } from "react-icons/io";
-import PrimaryButton from "../../ui/primaryButton";
+import PrimaryButton from "../../ui/PrimaryButton";
 
 export default function LoginForm() {
   //state
